@@ -18,6 +18,12 @@
  * License along with this library; If not, see <http://www.gnu.org/licenses/>.
  *
  */
+/*
+I understand that the above copyright states I should provide a licence with to redistribute this file,
+however the source of this file is https://github.com/chrislim2888/IP2Location-PHP-Module and there is no licence provided with the
+original version, and I am sure that Github is the source since the official link is from https://www.ip2location.com/developers/php.
+I have notified the developer of the issue and in the meantime will provide no licence.
+*/
 
 namespace IP2Location;
 
