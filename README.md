@@ -8,3 +8,7 @@ The results should be a timezone in PHP's supported list (http://php.net/manual/
 It is best practice to run the function only when the user's registers to be a part of the website due to the frequent API calls that would have to occur otherwise as well as the limited number of free API calls that timezonedb.com provide.
 
 See `example.php` for usage information.
+
+Included in this Github is also a script and crontab for automatically updating the IP2Location database. IP2Location update their databases on the first of each month and therefore a crontab once a month is necessary to stay accurate with identifying timezones.
+
+Also please note that use of IP2Location's free (LITE) databases requires attribution, information of these requirements can be found at http://lite.ip2location.com/.
