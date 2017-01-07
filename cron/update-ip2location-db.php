@@ -1,6 +1,8 @@
 <?php
 
 # install
+# 45      23      <1-7>       *       *       php    /path/to/cron/update-ip2location-db.php
+# make sure php is in $PATH or specify an absolute link
 
 $account_email = "<IP2Location.com registered e-mail address>";
 $account_password = "<IP2Location.com registered password>";
