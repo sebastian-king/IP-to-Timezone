@@ -2,9 +2,9 @@
 require_once("include/IP2Location.php");
 $ip = $_SERVER['REMOTE_ADDR'];
 if (filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4)) {
-	$db = new \IP2Location\Database("include/IP2LOCATION-LITE-DB11.BIN", \IP2Location\Database::FILE_IO);
+	$db = new \IP2Location\Database("include/ip2location-dbs//IP2LOCATION-LITE-DB11.BIN", \IP2Location\Database::FILE_IO);
 } else if (filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV6)) {
-	$db = new \IP2Location\Database("include/IP2LOCATION-LITE-DB11.IPV6.BIN", \IP2Location\Database::FILE_IO);
+	$db = new \IP2Location\Database("include/ip2location-dbs//IP2LOCATION-LITE-DB11.IPV6.BIN", \IP2Location\Database::FILE_IO);
 } else {
 	$timezone = "UTC";
 }
