@@ -10,5 +10,6 @@ It is best practice to run the function only when the user's registers to be a p
 See `example.php` for usage information.
 
 Included in this Github is also a script and crontab for automatically updating the IP2Location database. IP2Location update their databases on the first of each month and therefore a crontab once a month is necessary to stay accurate with identifying timezones. For instructions on how to install this script please see the top of `cron/update-ip2location-db.php`
+Supports cron on 32-bit and 64-bit Linux, Unix and Windows.
 
 Also please note that use of IP2Location's free (LITE) databases requires attribution, information of these requirements can be found at http://lite.ip2location.com/.
