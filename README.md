@@ -1,11 +1,11 @@
 # IP-to-Timezone
-This is a method of freely and relatively efficiently figuring out the timezone of the user visiting your website. The PHP script is basically a workaround because GeoIP services that provide timezone information are not free.
+This is a method of freely and relatively efficiently figuring out the timezone of the user visiting your website. The PHP script is basically a free workaround because Geo-IP services that provide timezone information are not free.
 
 It requires only a free account on [IP2Location.com](https://www.ip2location.com/) and [timezonedb.com](https://timezonedb.com/).
 
-The results should be a timezone in PHP's supported list (http://php.net/manual/en/timezones.php) allowing the use of the PHP function `date_default_timezone_set($timezone)` to synchronise timestamps with the user's time.
+The results should be a timezone in [PHP's supported list](http://php.net/manual/en/timezones.php) allowing the use of the PHP function `date_default_timezone_set($timezone)` to synchronise timestamps with the user's time.
 
-It is best practice to run the function only when the user's registers to be a part of the website due to the frequent API calls that would have to occur otherwise as well as the limited number of free API calls that timezonedb.com provide. Otherwise for situations with unregistered users it is best to figure out the timestamp once and store it in a session. Although due to the nature that this is a free workaround it is not intended for high volume websites.
+It is best practice to run the function only when the user's registers to be a part of the website due to the frequent API calls that would have to occur otherwise as well as the limited number of free API calls that timezonedb.com provide. Otherwise for situations with unregistered users it is best to figure out the timestamp once and store it in a session. Although due to the nature of the code I provide being essentially a free workaround it is not intended for high volume websites with large numbers of users.
 
 See `example.php` for usage information.
 
