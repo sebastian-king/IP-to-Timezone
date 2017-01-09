@@ -3,7 +3,7 @@
 # if you are running linux/unix, on some of the latest versions of PHP 7 it is requires to install the Zip library for PHP separately
 # on debian based systems this can be achieved using `apt-get install php7.0-zip`
 # on windows system, it may be required to enable the zip extension in your php.ini file.
-# and also please note that there may be a different php.ini file for the PHP CLI that cron will be using than the one your webserver will use
+# and also please note that there may be a different php.ini file for the PHP CLI that cron will be using rather than the one your webserver will use
 #
 # below is the line to be appended to your crontab configuration, the 3rd number should be any random number between 1 and 7
 # because this is the day of the month that the script will use and should be randomised to avoid network congestion at the start of the month
