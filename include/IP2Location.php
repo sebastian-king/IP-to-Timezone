@@ -18,12 +18,6 @@
  * License along with this library; If not, see <http://www.gnu.org/licenses/>.
  *
  */
-/*
-I understand that the above copyright states I should provide a licence with to redistribute this file,
-however the source of this file is https://github.com/chrislim2888/IP2Location-PHP-Module and there is no licence provided with the
-original version, and I am sure that Github is the source since the official link is from https://www.ip2location.com/developers/php.
-I have notified the developer of the issue and in the meantime will provide no licence.
-*/
 
 namespace IP2Location;
 
@@ -1746,9 +1740,9 @@ class Database {
           }
           break;
         case self::COUNTRY_NAME:
-          if (!$done[self::COUNTRY_CODE]) {
-            $results[self::COUNTRY_CODE] = $this->readCountryNameAndCode($pointer)[0];
-            $done[self::COUNTRY_CODE]    = true;
+          if (!$done[self::COUNTRY_NAME]) {
+            $results[self::COUNTRY_NAME] = $this->readCountryNameAndCode($pointer)[0];
+            $done[self::COUNTRY_NAME]    = true;
           }
           break;
         case self::REGION_NAME:
@@ -1902,7 +1896,6 @@ class Database {
         return $results;
       }
     } else {
-
       // return a single value
       return array_values($results)[0];
     }
